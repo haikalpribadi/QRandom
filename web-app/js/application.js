@@ -25,8 +25,8 @@ function setTypeOptions(){
         $("[name=output]").filter("[value=display]").attr("disabled",true);
         $("#format").attr("value","csv");
         $("#format").attr("disabled", true);
-        $("#formatfield").fadeTo("normal", 0.5);
-        $("#optiondisplay").fadeTo("normal", 0.5);
+        $("#formatfield").fadeTo("normal", 0.4);
+        $("#optiondisplay").fadeTo("normal", 0.4);
         $("#scale").attr("checked",false);
         $("#scale").attr("disabled",true);
         $("#minscalecell").fadeTo("normal", 1);
@@ -34,7 +34,7 @@ function setTypeOptions(){
         $("#maxscalecell").fadeTo("normal", 1);
         $("#maxscale").attr("disabled",true);
         $("#scaletocell").fadeTo("normal", 1);
-        $("#scalefields").fadeTo("normal",0.5);
+        $("#scalefields").fadeTo("normal",0.4);
     }
     else if(value=="integer"){
         $("[name=output]").filter("[value=display]").attr("disabled",false);

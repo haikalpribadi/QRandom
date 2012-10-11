@@ -31,8 +31,15 @@ body {
     background-repeat: repeat-x;
     width:1200px;
     margin: 0px auto;
-    color: #525760;
+    color: #000;
     font-size:12px;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color:#fff;
 }
 .text{
     margin:5px auto 5px;
@@ -77,43 +84,25 @@ body {
     font-size:14px;
 }
 .contentcontainer{
-    width: 800px;
-    background: #edeff2;
-    background-image:url(images/bg.png);
+    width: 990px;
     background-repeat:repeat;
     padding: 0px 10px;
-    margin: 20px auto;
-    max-width: 900px;
-    overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-    -moz-box-shadow: 0 0 0.5em #111111;
-    -webkit-box-shadow: 0 0 0.5em #111111;
-    box-shadow: 0 0 0.5em #111111;
-    z-index: 2;
-}
-#navigationPanelBG{
-    width:175px;
-    margin-top:100px;
-    position:absolute;
-    z-index: -1;
-    overflow: hidden;
-    background:#292929;
-    -moz-border-radius:    8px;
-    -webkit-border-radius: 8px;
-    border-radius:         8px;
-    -moz-box-shadow: 0 0 0.5em #111111;
-    -webkit-box-shadow: 0 0 0.5em #111111;
-    box-shadow: 0 0 0.5em #111111;
+    margin: 5px;
+    overflow-x: hidden;
+    background: #EFEAF1;
+    -moz-border-radius:    5px;
+    -webkit-border-radius: 5px;
+    border-radius:         5px;
 }
 #navigationPanel{
     width:175px;
-    margin-top:100px;
-    position:absolute;
-    z-index: 1;
+    margin: 5px;
     overflow: hidden;
     float:left;
-    -moz-border-radius:    8px;
-    -webkit-border-radius: 8px;
-    border-radius:         8px;
+    background: #EFEAF1;
+    -moz-border-radius:    5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    border-radius:         5px 0px 0px 5px;
 }
 #navigationList{
     width:100%;
@@ -123,17 +112,15 @@ body {
 }
 .navigationListItem{
     height:50px;
-    width:165px;
-    border-bottom:solid 1px #202020;
-    border-top:solid 1px #2F2F2F;
-    -moz-border-radius:    8px;
-    -webkit-border-radius: 8px;
-    border-radius:         8px;
+    width:175px;
+    -moz-border-radius:    5px;
+    -webkit-border-radius: 5px;
+    border-radius:         5px;
 }
 
 .navigationListItem:hover, .currentItem
 {
-    background-color:#212121;
+    background-color:#C1AEC9;
     -moz-user-select: none;
     cursor:pointer;
 }
@@ -145,21 +132,21 @@ body {
 }
 .navigationLink{
     height:100%;
-    width:150px;
+    width:160px;
     padding-left:10px;
     display:block;
     line-height: 50px;
     float:left;
     font-size: 12px;
-    color: #cecece;
+    color: #000;
     text-decoration: none;
 }
 .currentItem .navigationListItemIndicator{
-    background: #FF9900;
+    background: #653579;
 }
 .navigationListItem:Hover .navigationListItemIndicator
 {
-    background: #6666CC;
+    background: #653579;
 }
 #logo-qrandom {
     /*background-color: #abbf78;*/
@@ -173,7 +160,7 @@ body {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius:         5px;
-    background: none repeat scroll 0 0 #dedede;
+    background: none repeat scroll 0 0 #C1AEC9;
     clear: both;
     margin: 0 auto;
     padding: 3px;
@@ -217,15 +204,26 @@ body {
     line-height:20px;
     float:right;
 }
+.footer{
+    border-top: 1px solid #ccc;
+    height:50px;
+    width:100%;
+    color: #666666;
+    font: normal 14px Helvetica,Arial,sans-serif;
+}
+.footer a{
+    color: #666666;
+    font: normal 14px Helvetica,Arial,sans-serif;
+}
 .round {
     -moz-border-radius:    12px;
     -webkit-border-radius: 12px;
     border-radius:         12px;
 }
 .round-s {
-    -moz-border-radius:    8px;
-    -webkit-border-radius: 8px;
-    border-radius:         8px;
+    -moz-border-radius:    5px;
+    -webkit-border-radius: 5px;
+    border-radius:         5px;
 }
 
 .contentLayout{
@@ -240,7 +238,7 @@ body {
     text-align: center;
     font-size:24px;
     font-weight:100;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #C1AEC9;
 }
 .contentBody{
     text-align:center;
@@ -271,7 +269,7 @@ body {
     margin:20px auto 0px;
     position:relative;
     overflow: hidden;
-    background:#292929;
+    background:#C1AEC9;
     -moz-box-shadow: 0 0 0.5em #111111;
     -webkit-box-shadow: 0 0 0.5em #111111;
     box-shadow: 0 0 0.5em #111111;
@@ -296,10 +294,10 @@ body {
     padding-top:2px;
     line-height: 24px;
     font-size: 12px;
-    color: #cecece;
+    color: #000;
     text-decoration: none;
-    border-right:solid 1px #202020;
-    border-left:solid 1px #2F2F2F;
+    border-right:solid 1px #A58DAF;
+    border-left:solid 1px #D4BBDF;
 }
 .tabListItemIndicator{
     background:none;
@@ -308,29 +306,29 @@ body {
     display:block;
 }
 .tabListItem:Hover, .currentTab{
-    background-color:#212121;
+    background-color:#C1AEC9;
     -moz-user-select: none;
     cursor:pointer;
 }
 .currentTab .tabListItemIndicator{
-    background: #FF9900;
+    background: #653579;
 }
 .tabListItem:Hover .tabListItemIndicator
 {
-    background: #6666CC;
+    background: #653579;
 }
 .syntaxhighlighter {;
-  border: 3px solid #CACCD2;
-  max-width: 99% !important;
-  height:700px !important;
-  max-height:700px !important;
-  position: relative !important;
-  overflow: auto !important;
-  overflow-y: hidden !important;
-  font-size: .9em !important;
-    -moz-border-radius:    8px;
-    -webkit-border-radius: 8px;
-    border-radius:         8px;
+                    border: 3px solid #C1AEC9;
+                    max-width: 99% !important;
+                    height:700px !important;
+                    max-height:700px !important;
+                    position: relative !important;
+                    overflow: auto !important;
+                    overflow-y: hidden !important;
+                    font-size: .9em !important;
+                    -moz-border-radius:    8px;
+                    -webkit-border-radius: 8px;
+                    border-radius:         8px;
 }
 .tutDownloadBtnHolder{
     overflow: hidden;
@@ -348,7 +346,7 @@ body {
     vertical-align:top;
     text-align: left;
     margin:10px auto;
-    background-color:#E3E5E7;
+    background-color:#EFEAF1;
     line-height:38px;
 }
 #size{
@@ -417,18 +415,18 @@ body {
     padding-bottom:4px;
     border:none;
     color:#FFFFFF;
-    background-color:#4db9fd;
+    background-color:#5F5F5F;
     -moz-border-radius:    9px;
     -webkit-border-radius: 9px;
     border-radius:         9px;
     text-shadow:1px 1px 1px #000;
-    -moz-box-shadow: 1px 1px 2px #377094;
-    -webkit-box-shadow: 1px 1px 2px #377094;
-    box-shadow: 1px 1px 2px #377094;
+    -moz-box-shadow: 1px 1px 2px #5F5F5F;
+    -webkit-box-shadow: 1px 1px 2px #5F5F5F;
+    box-shadow: 1px 1px 2px #5F5F5F;
 }
 .submitbutton:hover{
     cursor:pointer;
-    background-color: #6FC7FE;
+    background-color: #5F5F5F;
 }
 .submitdisabled{
     opacity:0.5;
@@ -438,11 +436,8 @@ body {
     padding:10px;
     margin:10px auto;
     color:#ffffff;
-    background-color:#69C062;
+    background-color:#653579;
     font-size: 12px;
-    -moz-box-shadow: 1px 1px 3px #2A7A22;
-    -webkit-box-shadow: 1px 1px 3px #2A7A22;
-    box-shadow: 1px 1px 3px #2A7A22;
 }
 #apiurl{
     display:block;

@@ -16,7 +16,7 @@
     <table class="contentLayout" cellpadding="0" cellspacing="0">
       <tr>
         <td class="contentTitle">
-          Behold QRandom! A Quantum Random Number Generator
+          A Quantum Random Number Generator
         </td>
       </tr>
       <tr>
