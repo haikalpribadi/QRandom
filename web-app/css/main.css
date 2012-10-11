@@ -6,7 +6,7 @@
 
 /* FONT STACK */
 body, input, select, textarea {
-    font-family: MuseoSans, "Lucida Grande","Lucida Sans Unicode", Verdana,"Jamrul",sans-serif;
+    font-family: Helvetica,Arial,sans-serif, MuseoSans, "Lucida Grande","Lucida Sans Unicode", Verdana,"Jamrul",sans-serif;
 }
 
 /* BASE LAYOUT */
@@ -27,9 +27,9 @@ html * {
 }
 
 body {
-    background-image: url(images/bg3.png);
-    background-repeat: repeat;
-    width:1150px;
+    background-image: url(images/bg-monash.png);
+    background-repeat: repeat-x;
+    width:1200px;
     margin: 0px auto;
     color: #525760;
     font-size:12px;
@@ -37,6 +37,44 @@ body {
 .text{
     margin:5px auto 5px;
     text-align: justify;
+}
+
+.header{
+    width:100%;
+    height:148px;
+    background:#fff;
+}
+.monash_menu{
+    background:#653579;
+    height:34px;
+}
+.monash_menu ul{
+    padding:0px;
+    margin: 0px 8px;
+    width:1150px;
+    float:left;
+}
+.monash_menu ul li{
+    float:left;
+    list-style-type: none;
+    padding:0px 15px;
+    border-right:1px solid #fff;
+}
+
+.monash_menu li a{
+    font-size: 14px;
+    padding:0px;
+    line-height:26px;
+    text-decoration: none;
+    color:#fff;
+}
+.monash_menu li a:hover{
+    color:#9DAAE2;
+}
+.search_menu{
+    background:#F0EEED;
+    height:34px;
+    font-size:14px;
 }
 .contentcontainer{
     width: 800px;
